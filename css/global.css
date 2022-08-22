@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+@font-face {
+  font-family: Altone-bold;
+  src: url(../fonts/AltoneTrial-Bold.ttf);
+}
+  
+@font-face {
+  font-family: Argentum-sans-regular;
+  src: url(../fonts/argentum-sans.regular.ttf);
+}
+  
+@font-face {
+  font-family: Argentum-sans-semibold;
+  src: url(../fonts/argentum-sans.semibold.ttf);
+}
+  
+@font-face {
+  font-family: Altone-regular;
+  src: url(../fonts/AltoneTrial-Regular.ttf);
+}
+
+  
+@font-face {
+  font-family: Altone-bold-oblique;
+  src: url(../fonts/AltoneTrial-BoldOblique.ttf);
+}
+  
+@font-face {
+  font-family: Altone-regular-oblique;
+  src: url(../fonts/AltoneTrial-RegularOblique.ttf);
+}
+
+html{
+  scroll-behavior: smooth !important;
+
+}
+  
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    scrollbar-color: #e6ecf0 white;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: 5px !important; /* Firefox */
+
+  }
+
+    body::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    body::-webkit-scrollbar-track {
+     background: #e6ecf0;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: #ffe3bf;
+        border-radius: 8px;
+        border: 3px solid #e6ecf0;
+    }
+
+ul {
+    list-style: none;
+  }
+  
+  a {
+    scroll-behavior: smooth !important;
+    text-decoration: none;
+  }
