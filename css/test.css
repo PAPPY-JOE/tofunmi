@@ -13,7 +13,7 @@ main{
     flex-flow: row wrap;
     width: 100%;
     min-height: 100vh;
-    margin: 80px 0 100px 0;
+    margin: 80px 0 80px 0;
     font-family: "Altone-regular";
 }
 
@@ -172,6 +172,9 @@ main .right img{
 }
 
 .about-item{
+    /* background-image: url("../images/background.svg"); */
+    background-repeat: no-repeat;
+    background-size: auto;
     background-color: white;
     /* flex: 0.48; */
     flex: 1;
@@ -455,6 +458,7 @@ main .right img{
   @media only screen and (max-width: 480px) {
     main {
         margin-top: 70px;
+        margin-bottom: 30px;
     }
     .left-box h1{
         font-size: 38px;
