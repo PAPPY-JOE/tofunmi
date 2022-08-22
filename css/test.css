@@ -255,7 +255,7 @@ main .right img{
     display: flex;
     flex-flow: column;
     justify-content: center;
-    height: 6px;
+    height: 20px;
     overflow: visible;
     position: relative;
     border-radius: 9px;
@@ -267,7 +267,15 @@ main .right img{
     line-height: 50px;
     font-size: 2.5rem;
     color: #fff;
-    /* color: #4e4b66; */
+    display: flex;
+    flex-flow: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.next-header p img{
+    margin-top: -5px;
+    width: 40%;
 }
 
 .next-container{
