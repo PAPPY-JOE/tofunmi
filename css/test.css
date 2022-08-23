@@ -66,34 +66,38 @@ main .left{
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding: 25px 50px;
     border-radius: 500px;
     width: max-content;
-    /* background-color: #14142b; */
     margin: 20px 15px;
-    color: wheat;
     transition: 0.5s all ease;
     touch-action: pan-y;
-    border: 5px solid #4e4b66;
 
 }
 
 .left-btn:hover{
-    font-family: "Altone-bold";
-    background-color: white;
     position: relative;
     top: -5px;
     box-shadow: 0px 0px 15px 2px #d6d5d3;
-    border-color: white;
 }
 
 .left-btn a{
     font-size: 1.2rem;
     color: #fff;
+    border-radius: 500px;
+    height: 100%;
+    flex: 1;
+    padding: 25px 50px;
+    transition: 0.5s all ease;
+    border: 5px solid #4e4b66;
+
 }
 
 .left-btn:hover a{
+    font-family: "Altone-bold";
     color: #14142b;
+    border-color: white;
+    background-color: white;
+
 }
 
 
@@ -158,11 +162,8 @@ main .right img{
 .about-item-container{
     padding: 40px 0;
     z-index: 50;
-    /* display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center; */
 
+    /* wow */
     display: grid;
     grid-auto-columns: 1fr;
     grid-column-gap: 32px;
@@ -473,23 +474,62 @@ main .right img{
   .contact .underlay{
     flex: 1;
     position: absolute;
-    height: 80%;
-    width: 80%;
+    height: 90%;
+    width: 100%;
     z-index: 0;
     opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .underlay-box{
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+    position: relative;
   }
 
   .contact .underlay img{
+    transition: 5s all ease;
+  }
+
+  .contact .underlay .imgOne{
     max-width: 120px;
     top: 5px;
     left: 5px;
+    animation: imgOne 25s infinite;
+    position: absolute;
   }
 
-  .contact:hover .underlay img{
-    transform: scale(1.03);
-    position: relative;
-    top: 5px;
+  .contact .underlay .imgTwo{
+    max-width: 120px;
+    top: 0%;
     right: 5px;
+    position: absolute;
+    animation: imgTwo 15s infinite;
+
+  }
+  
+@keyframes imgOne {
+  0%   {top: 10%; left: 5%;}
+  30%  {top: 40%; left: 45%;}
+  48%  {top: 80%; left: 33%;}
+  58%  {top: 55%; left: 5%;}
+  70%  {top: 15%; left: 60%;}
+  85%  {top: 90%; left: 20%;}
+  100% {top: 10%; left: 5%;}
+  }
+
+@keyframes imgTwo {
+    0%   {top: 10%; right: 5%;}
+    25%  {top: 40%; right: 45%;}
+    38%  {top: 20%; right: 65%;}
+    50%  {top: 75%; right: 50%;}
+    65%  {top: 30%; right: 20%;}
+    75%  {top: 10%; right: 90%;}
+    75%  {top: 60%; right: 22%;}
+    100% {top: 10%; right: 5%;}
   }
 
   .contact-left-text-box{
@@ -544,11 +584,15 @@ main .right img{
   .contact-left-link{
     margin: 20px 0;
     width: max-content;
+    min-width: 150px;
+
   }
 
   .contact-left-link p{
     color: #f2f2f2;
     font-family: "Argentum-sans-semibold";
+    max-width: none;
+    min-width: none;
   }
 
   .contact-left-link div{
@@ -556,7 +600,6 @@ main .right img{
 
   }
   .contact-left-link s{
-    /* background-color: #9aa7e3; */
     display: flex;
     width: 0;
     height: 2px;
@@ -581,6 +624,7 @@ main .right img{
     background-image: url("../images/background.svg");
     background-repeat: repeat;
     background-color: #0f0823;
+    opacity: 0.95;
   }
 
   .contact-right-text-box .form-input{
