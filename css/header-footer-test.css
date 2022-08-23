@@ -31,7 +31,6 @@
 
 .fixed-header ul {
     display: flex;
-    font-family: "Open Sans", sans-serif;
   }
   
 .fixed-header li {
@@ -70,27 +69,41 @@
   }
 
   .header-button{
-    background-color: #34cdff;
+    /* background-color: #34cdff; */
     /* background-color: #060f29; */
-    padding: 3px 10px;
+    /* border: 2px solid #34cdff; */
+    padding: 5px;
     border-radius: 25px;
-    margin: 0 10px;
+    /* margin: 0 10px; */
     transition: 0.3s all ease;
     
   }
 
   .header-button:hover{
-    background-color: #4a41ff;
+    /* background-color: #4a41ff;
     background-color: #060f29;
     background-color: #9aa7e3;
+    border-color: #9aa7e3; */
   }
 
   .header-button:hover a{
     color: white;
+    /* color: #34cdff; */
+    /* color: #9aa7e3; */
+    background-color: #9aa7e3;
+    background-color: #34cdff;
+    border-color: #34cdff;
+    /* border-color: #9aa7e3; */
   }
   .header-button a{
+    height: 100%;
+    width: 100%;
+    transition: 0.3s all ease;
     font-family: "Altone-bold";
     color:#fff;
+    border-radius: 25px;
+    padding: 5px 10px;
+    border: 2px solid #34cdff;
   }
     
 .fixed-logo {

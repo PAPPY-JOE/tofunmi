@@ -2,6 +2,7 @@ body{
     background-image: url("../images/background.svg");
     background-repeat: repeat;
     background-color: #14142b;
+    position: relative;
 }
 
 main{
@@ -15,6 +16,7 @@ main{
     min-height: 100vh;
     margin: 80px 0 80px 0;
     font-family: "Altone-regular";
+    z-index: 50;
 }
 
 main .left{
@@ -32,6 +34,7 @@ main .left{
     flex-flow: column;
     justify-content: center;
     align-items: flex-start;
+    position: relative;
 }
 
 .left-box p{
@@ -76,8 +79,9 @@ main .left{
 
 .left-btn:hover{
     position: relative;
+    width: max-content;
     top: -5px;
-    box-shadow: 0px 0px 15px 2px #d6d5d3;
+    overflow: visible;
 }
 
 .left-btn a{
@@ -93,10 +97,14 @@ main .left{
 }
 
 .left-btn:hover a{
+    transform: scale(0.9) !important;
+    position: relative;
     font-family: "Altone-bold";
     color: #14142b;
     border-color: white;
     background-color: white;
+    box-shadow: 0px 0px 15px 2px #d6d5d3;
+
 
 }
 
@@ -389,14 +397,13 @@ main .right img{
     justify-content: center;
     flex-flow: column;
     width: max-content;
-    font-family: "Argentum-sans-regular";
+    font-family: "Altone-bold";
     transition: 0.5s all ease;
 }
 
 .next-button a{
     font-size: 1.2rem;
     color: #fff;
-    /* background-color: red; */
     display: flex;
     width: max-content;
     padding: 9px;
@@ -407,11 +414,11 @@ main .right img{
 }
 
 .next-button a:hover div{
-    font-family: "Altone-bold";
     background-color: white;
     position: relative;
     box-shadow: 0px 0px 9px 2px #f6f7ff;
     border-color: white;
+    transform: scale(0.9) !important;
 }
 
   /* Attached Social */
@@ -471,7 +478,7 @@ main .right img{
     z-index: 50;
   }
 
-  .contact .underlay{
+   .underlay{
     flex: 1;
     position: absolute;
     height: 90%;
@@ -490,11 +497,11 @@ main .right img{
     position: relative;
   }
 
-  .contact .underlay img{
+   .underlay img{
     transition: 5s all ease;
   }
 
-  .contact .underlay .imgOne{
+   .underlay .imgOne{
     max-width: 120px;
     top: 5px;
     left: 5px;
@@ -502,7 +509,7 @@ main .right img{
     position: absolute;
   }
 
-  .contact .underlay .imgTwo{
+   .underlay .imgTwo{
     max-width: 120px;
     top: 0%;
     right: 5px;
@@ -567,6 +574,7 @@ main .right img{
     font-size: 1rem;
     max-width: 500px;
     line-height: 2rem;
+    font-family: "Argentum-sans-regular";
   }
 
 
