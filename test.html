@@ -409,8 +409,8 @@
                 </div>
             </div>
 
-            <div class="contact-right-text-box">
-                <form method="post" name="contactMeForm" action="submit.php">
+            <div class="contact-right-text-box">            
+                <form method="post" name="contactMeForm" >
                     <div class="form-input">
                         <input required minlength="5" name="name" type="text" placeholder="Full name" />
                         <input required minlength="5" name="email" type="email" placeholder="Email address" />
@@ -422,6 +422,16 @@
                     <div class="submit">
                         <button value="Send Form" type="submit" >Send Message</button>
                     </div>
+
+                    <?php if (!empty($message)) { ?>
+                        
+                        <div class="success">
+                            <h3><?php echo $message ?></h3>
+                        </div>
+                        
+                    <?php
+                        }
+                    ?>
                 </form>
             </div>
        </div>
