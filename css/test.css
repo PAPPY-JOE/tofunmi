@@ -2,7 +2,6 @@ body{
     background-image: url("../images/background.svg");
     background-repeat: repeat;
     background-color: #14142b;
-    position: relative;
 }
 
 main{
@@ -488,6 +487,8 @@ main .right img{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: none;
+
   }
 
   .underlay-box{
@@ -499,6 +500,7 @@ main .right img{
 
    .underlay img{
     transition: 5s all ease;
+    cursor: none;
   }
 
    .underlay .imgOne{
