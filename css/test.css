@@ -220,8 +220,6 @@ main .right img{
     margin-bottom: 3%;
     line-height: 1.333em;
     font-size: 24px;
-    /* white-space: nowrap; */
-    /* text-align: center; */
     color: #4e4b66;
 }
 
@@ -312,6 +310,10 @@ main .right img{
 
 }
 
+.flyers .next-item-box{
+  padding: 5px;
+}
+
 .next-item-box:hover{
     box-shadow: none;
 }
@@ -334,9 +336,11 @@ main .right img{
     padding: 0;
     position: absolute;
     border: none;
-    height: 380px;
-    width: 380px;
+    /* height: 380px;
+    width: 380px; */
     transition: 0.5s ease;
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -814,11 +818,6 @@ main .right img{
     .next-item-img-box{
         height: 230px;
         width: 220px;
-    }
-    
-    .next-item-img-box img{
-        height: 300px;
-        width: 350px;
     }
     
     .next-item-text-first, .next-item-text-sub {
