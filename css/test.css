@@ -280,8 +280,8 @@ main .right img{
 }
 
 .next-header p img{
-    margin-top: -5px;
-    width: 40%;
+    /* margin-top: -5px; */
+    width: 30%;
 }
 
 .next-container{
