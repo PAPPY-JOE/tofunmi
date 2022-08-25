@@ -236,8 +236,9 @@ main .right img{
   font-size: 25px;
   margin: 5% 0;
   border-radius: 200px;
-  color: #8129ef;
-    border: 3px solid #8129ef;
+  background-color: #fff;
+  color: #4e4b66;
+    border: none;
     padding: 2px 25px;
     display: flex;
     align-items: center;
@@ -246,16 +247,18 @@ main .right img{
     width: max-content;
     font-family: "Altone-bold";
     transition: 0.5s all ease;
+    box-shadow: 0px 0px 9px 0px #d6d5d3;
+    transform: scale(0.93) !important;
+
 }
 
 .a-section-text-container a p:hover{
-  background-color: #8129ef;
+  background-image: linear-gradient(360deg , #f83bc3, #8129ef);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-5deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
   position: relative;
-  /* box-shadow: 0px 0px 9px 2px #440a8c; */
-  box-shadow: 0px 0px 9px 2px whitesmoke;
-  border-color: #8129ef;
   color: #fff;
-  transform: scale(0.9) !important;
+  transform: scale(0.89) !important;
 }
 
 
