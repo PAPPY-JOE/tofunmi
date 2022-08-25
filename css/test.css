@@ -70,7 +70,7 @@ main .left{
     align-items: center;
     border-radius: 500px;
     width: max-content;
-    margin: 20px 15px;
+    margin: 20px 15px 5px 15px;
     transition: 0.5s all ease;
     touch-action: pan-y;
 
@@ -128,10 +128,139 @@ main .right img{
 
 }
 
-
+.white{
+  background: white;
+}
 
 
 /* About */
+
+.a-section{
+  background: #f2f2f2;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 30px 0;
+  margin-top: 25px;
+}
+
+.a-section-img-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  flex: 0.6;
+  position: relative;
+  min-width: 350px;
+  /* background: #000; */
+}
+
+.a-section-img-box p{
+  width: 63%;
+  height: 87%;
+  border-radius: 60px;
+  /* background-image: linear-gradient(267deg, #8129ef, #f83bc3); */
+  background-image: linear-gradient(267deg , #f83bc3, #8129ef);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-5deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.8;
+
+}
+
+.a-section-img{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  position: relative;
+  min-width: 300px;
+
+}
+
+.a-sect-img{
+  z-index: 50;
+  width: 70%;
+  border-radius: 60px;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(5deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  background-color: white !important;
+  border: 1px solid #8129ef;
+}
+
+.a-section-text-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.a-section-text-container{
+  width: 70%;
+}
+
+.a-section-text-box h2{
+  font-family: "Altone-bold";
+  font-size: 2.5rem;
+  margin: 25px 0;
+  color: #4e4b66 !important;
+}
+
+.a-section-text-box p{
+  font-family: "Argentum-sans-regular";
+  color: #777990;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  line-height: 1.777em;
+  font-size: 18px;
+}
+
+.a-section-text-box .point{
+  color: #4e4b66 !important;
+  font-family: "Argentum-sans-semibold";
+  line-height:  1.333em;
+
+}
+
+.a-section-text-container a {
+  width: max-content;
+  display: flex;
+}
+
+.a-section-text-container a p{
+  font-size: 25px;
+  margin: 5% 0;
+  border-radius: 200px;
+  color: #8129ef;
+    border: 3px solid #8129ef;
+    padding: 2px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    width: max-content;
+    font-family: "Altone-bold";
+    transition: 0.5s all ease;
+}
+
+.a-section-text-container a p:hover{
+  background-color: #8129ef;
+  position: relative;
+  /* box-shadow: 0px 0px 9px 2px #440a8c; */
+  box-shadow: 0px 0px 9px 2px whitesmoke;
+  border-color: #8129ef;
+  color: #fff;
+  transform: scale(0.9) !important;
+}
+
+
+
+/* Services */
 
 .about{
     background: #fff;
@@ -702,112 +831,6 @@ main .right img{
     border-color: #fff;
   }
 
-  /* Footer */
-
-  .footer{
-    background-color: #14142b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    width: 100%;
-    padding: 10px 0;
-    border-top: 1px solid #4e4b66
-  }
-
-  .footer-top{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-    /* background: #2b2b2b; */
-    width: 80%;
-  }
-
-  .footer-top div{
-    /* flex: 0.5; */
-    margin: 20px 0;
-    width: 20%;
-    min-width: 300px;
-  }
-
-  .footer-logo{
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    height: 90px;
-
-  }
-
-  .footer-links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    padding: 20px 0;
-    flex: 1;
-  }
-
-  .footer-links ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex-flow: row wrap;
-  }
-
-  .footer-links li{
-    margin: 0 3%;
-  }
-
-  .footer-links a {
-    color: white;
-    font-family: "Argentum-sans-regular";
-  }
-
-  .footer img{
-    width: 80%;
-  }
-
-  .footer-socials{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    /* background-color: wheat; */
-
-  }
-
-  .footer-socials i{
-    color: white;
-    margin: 0 20px;
-  }
-
-  .footer-bottom{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    padding: 25px 0 20px 0;
-    font-size: 0.8rem;
-    color: #bebdd4;
-    font-family: "Oswald";
-    font-family: "Inconsolata";
-    border-top: 1px solid #4e4b66;
-    letter-spacing: 0.1rem;
-    line-height: 1.05rem;
-    font-weight: 700;
-    text-align: center;
-
-  }
-
-  .footer-bottom a{
-    text-decoration: underline;
-    color: white;
-    /* font-family: "Inconsolata"; */
-    /* font-family: "Oswald"; */
-
-  }
 
 
 @media only screen and (max-width: 900px) {
@@ -823,22 +846,7 @@ main .right img{
   .contact-left-align{
     align-items: center;
     text-align: center;
-  }
-
-  .footer-top{
-    flex-flow: column;
-  }
-
-  .footer-logo{
-    justify-content: center;
-  }
-
-  .footer-links{
-    margin-top: 0px !important;
-    width: 80% !important;
-  }
-
- 
+  } 
 
 }
 @media only screen and (max-width: 768px) {
@@ -866,17 +874,31 @@ main .right img{
         padding: 20px 40px;
     }
 
+    main .right{
+      /* display: none; */
+
+    }
     main .right img{
         margin-top: 0px;
         width: 80%;
     }
 
+   
     .a-social-b {
         display: none;
     }
   }
 
   @media only screen and (max-width: 650px) {
+    .a-section{
+      flex-flow: column;
+    }
+
+    .a-section-img-box {
+      background-color: #0f0823;
+      display: none;
+    }
+
     .about-item-container{
         display: flex;
         flex-flow: row wrap;
@@ -902,16 +924,6 @@ main .right img{
     width: 100%;
     min-width: none;
     line-height: 1.9rem;
-
-
-  }
-  
-  .footer-links ul{
-    flex-flow: column;
-  }
-
-  .footer-links li{
-    margin: 5% 0;
   }
 
   }
@@ -926,13 +938,11 @@ main .right img{
     .left-box p{
         font-size: 20px;
     }
-    .left-btn{
-        /* width: auto; */
-        width: 80%;
-        padding: 20px;
-        font-size: 18px;
-    }
-    
+
+    .left-btn a{
+      padding: 20px 30px;
+  
+  }
   }
 
   
