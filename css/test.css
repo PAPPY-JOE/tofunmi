@@ -390,13 +390,14 @@ main .right img{
     display: flex;
     flex-flow: column;
     justify-content: center;
-    height: 20px;
+    height: 70px;
     overflow: visible;
     position: relative;
     border-radius: 9px;
 }
 
 .next-header p{
+  /* background-color: #34cdff; */
     padding: 0 9px;
     position: absolute;
     line-height: 50px;

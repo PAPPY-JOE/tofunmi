@@ -283,7 +283,7 @@
     height: 60px;
     border-radius: 50px;
     min-width: 45px;
-    max-width: 200px;
+    /* max-width: 200px; */
     /* background-color: #34cdff; */
     /* background-color: #0b795b; */
     /* background-color: #163e7e; */
