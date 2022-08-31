@@ -244,7 +244,8 @@ main .right img{
   width: max-content;
   font-family: "Altone-bold";
   transition: 0.5s all ease;
-  box-shadow: 0px 0px 9px 0px #d6d5d3;
+  /* box-shadow: 0px 0px 9px 0px #d6d5d3; */
+  box-shadow: 0px 0px 9px 0px #d7dbf9;
   transform: scale(0.93) !important;
 }
 
