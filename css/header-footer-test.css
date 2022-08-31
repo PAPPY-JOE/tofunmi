@@ -88,18 +88,14 @@
 
   .header-button:hover a{
     color: white;
-    /* color: #34cdff; */
-    /* color: #9aa7e3; */
-    background-color: #9aa7e3;
-    background-color: #34cdff;
-    border-color: #34cdff;
-    /* border-color: #9aa7e3; */
+    background-color: #29bced;
+    border-color: #29bced;
   }
   .header-button a{
     height: 100%;
     width: 100%;
     transition: 0.3s all ease;
-    font-family: "Altone-bold";
+    font-family: "Altone-regular";
     color:#fff;
     border-radius: 25px;
     padding: 5px 10px;
