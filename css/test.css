@@ -235,22 +235,22 @@ main .right img{
   border-radius: 200px;
   background-color: #fff;
   color: #4e4b66;
-    border: none;
-    padding: 2px 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    width: max-content;
-    font-family: "Altone-bold";
-    transition: 0.5s all ease;
-    box-shadow: 0px 0px 9px 0px #d6d5d3;
-    transform: scale(0.93) !important;
-
+  border: none;
+  padding: 2px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  width: max-content;
+  font-family: "Altone-bold";
+  transition: 0.5s all ease;
+  box-shadow: 0px 0px 9px 0px #d6d5d3;
+  transform: scale(0.93) !important;
 }
 
 .a-section-text-container a p:hover{
-  background-image: linear-gradient(360deg , #f83bc3, #8129ef);
+  /* background-image: linear-gradient(360deg , #f83bc3, #8129ef); */
+  background-image: linear-gradient(360deg , #1d1966, #3a32bf, #4a41ff);
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-5deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   position: relative;
