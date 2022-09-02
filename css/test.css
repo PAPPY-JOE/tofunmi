@@ -13,7 +13,7 @@ main{
     flex-flow: row wrap;
     width: 100%;
     min-height: 100vh;
-    margin: 80px 0 80px 0;
+    margin: 60px 0 80px 0;
     font-family: "Altone-regular";
     z-index: 50;
 }
@@ -252,9 +252,10 @@ main .right img{
 
 .a-section-text-container a p:hover{
   /* background-image: linear-gradient(360deg , #f83bc3, #8129ef); */
-  background-image: linear-gradient(360deg , #1d1966, #3a32bf, #4a41ff);
+  /* background-image: linear-gradient(360deg , #1d1966, #3a32bf, #4a41ff);
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-5deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
+  transform-style: preserve-3d; */
+  background-color: #1d1966;
   position: relative;
   color: #fff;
   transform: scale(0.89) !important;
@@ -369,6 +370,11 @@ main .right img{
   z-index: 50;
   margin-top: -30px;
 }
+
+.services-button a {
+  overflow: visible;
+}
+
 .services-button a p{
   font-size: 1.2rem;
   margin: 5% 0;
@@ -389,9 +395,10 @@ main .right img{
 }
 
 .services-button a p:hover{
-  background-image: linear-gradient(360deg , #4a41ff, #3a32bf, #1d1966, #1d1966);
+  /* background-image: linear-gradient(360deg , #4a41ff, #3a32bf, #1d1966, #1d1966);
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-5deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
+  transform-style: preserve-3d; */
+  background-color: #1d1966;
   position: relative;
   color: #fff;
   transform: scale(0.9) !important;
@@ -560,7 +567,7 @@ main .right img{
 
 .next-button div{
 
-    border: 3px solid #717171;
+    border: 3px solid #4e4b66;
     border-radius: 20px;
     padding: 9px 20px;
     display: flex;
@@ -934,6 +941,11 @@ main .right img{
 
 
 @media only screen and (max-width: 1107px) {
+  
+  main{
+    margin-top: 110px;
+  }
+  
   .a-social-b {
     margin-top: auto;
     margin-bottom: auto;
@@ -968,6 +980,7 @@ main .right img{
 }
 }
 @media only screen and (max-width: 768px) {
+
     main .left, main .right{
         min-width: 100%;
         
@@ -1056,7 +1069,6 @@ main .right img{
   }
   @media only screen and (max-width: 480px) {
     main {
-        margin-top: 70px;
         margin-bottom: 30px;
     }
     .left-box h1{
