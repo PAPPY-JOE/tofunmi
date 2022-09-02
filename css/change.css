@@ -1,0 +1,88 @@
+.gallery{
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    scroll-behavior: smooth;
+    position: relative;
+    /* left: 30%; */
+    /* top: 30%; */
+}
+
+.gallery img {
+    height: 100%;
+    width: 600px;
+    flex-shrink: 0;
+    object-fit: cover;
+    position: sticky;
+    top: 0;
+}
+
+
+.card{
+    background: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+
+}
+
+.card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 17px;
+}
+
+.card-front{
+    background: linear-gradient(317.48deg, #ff8f00 20.49%, #ffd601 102.33%);
+}
+
+.card-front img{
+    /* height: 200px; */
+    width: 250px;
+}
+
+.card-back{
+    background-color: #ffd601;
+    /* background: linear-gradient(317.48deg, #ff8f00 20.49%, #ffd601 102.33%); */
+    color: white;
+    transform: rotateY(180deg);
+    font-family: "Oswald";
+}
+
+.card-back img{
+    /* height: 160px;  */
+    width: 160px; 
+       
+}
+
+.card-back h3{
+    margin-bottom: 0.3rem;
+}
+
+.card-back h1{
+    margin: 0;
+}

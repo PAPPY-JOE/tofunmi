@@ -119,6 +119,7 @@ main .right{
     min-width: 550px;
     min-height: 500px;
     height: 100%;
+    z-index: 50;
 
 }
 
@@ -260,7 +261,6 @@ main .right img{
 }
 
 
-
 /* Services */
 
 .about{
@@ -359,6 +359,43 @@ main .right img{
     font-size: 18px;
 }
 
+.services-button {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  margin-top: -30px;
+}
+.services-button a p{
+  font-size: 1.2rem;
+  margin: 5% 0;
+  border-radius: 200px;
+  background-color: #fff;
+  color: #4e4b66;
+  border: none;
+  padding: 9px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  width: max-content;
+  font-family: "Altone-bold";
+  transition: 0.5s all ease;
+  box-shadow: 0px 0px 9px 0px #d7dbf9;
+  /* transform: scale(0.93) !important; */
+}
+
+.services-button a p:hover{
+  background-image: linear-gradient(360deg , #4a41ff, #3a32bf, #1d1966, #1d1966);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-5deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  position: relative;
+  color: #fff;
+  transform: scale(0.9) !important;
+}
 
 
 
@@ -562,6 +599,7 @@ main .right img{
     top: 70%;
     right: 10px;
     transform: translateY(-50%);
+    z-index: 50;
   }
   
   .a-social-b a {
@@ -622,7 +660,6 @@ main .right img{
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: none;
 
   }
 
@@ -635,7 +672,8 @@ main .right img{
 
    .underlay img{
     transition: 5s all ease;
-    cursor: none;
+    cursor: default;
+
   }
 
    .underlay .imgOne{
@@ -652,6 +690,33 @@ main .right img{
     right: 5px;
     position: absolute;
     animation: imgTwo 15s infinite;
+
+  }
+
+   .underlay .imgThree{
+    max-width: 135px;
+    top: 20%;
+    left: 5%;
+    animation: imgThree 20s infinite;
+    position: absolute;
+
+  }
+
+   .underlay .imgFour{
+    max-width: 120px;
+    top: 8%;
+    right: 5%;
+    position: absolute;
+    animation: imgFour 35s infinite;
+
+  }
+
+   .underlay .imgFive{
+    max-width: 120px;
+    top: 80%;
+    right: 5%;
+    position: absolute;
+    animation: imgFive 15s infinite;
 
   }
   
@@ -672,8 +737,40 @@ main .right img{
     50%  {top: 75%; right: 50%;}
     65%  {top: 30%; right: 20%;}
     75%  {top: 10%; right: 90%;}
-    75%  {top: 60%; right: 22%;}
+    85%  {top: 60%; right: 22%;}
     100% {top: 10%; right: 5%;}
+  }
+  
+@keyframes imgThree {
+  0%   {top: 10%; left: 5%;}
+  30%  {top: 40%; left: 45%;}
+  48%  {top: 80%; left: 33%;}
+  58%  {top: 55%; left: 5%;}
+  70%  {top: 15%; left: 60%;}
+  85%  {top: 90%; left: 20%;}
+  100% {top: 10%; left: 5%;}
+  }
+
+@keyframes imgFour {
+    0%   {top: 10%; right: 5%;}
+    25%  {top: 40%; right: 45%;}
+    38%  {top: 20%; right: 65%;}
+    50%  {top: 75%; right: 50%;}
+    65%  {top: 30%; right: 20%;}
+    75%  {top: 10%; right: 90%;}
+    85%  {top: 60%; right: 22%;}
+    100% {top: 10%; right: 5%;}
+  }
+
+@keyframes imgFive {
+    0%   {top: 80%; right: 5%;}
+    25%  {top: 40%; right: 45%;}
+    38%  {top: 20%; right: 65%;}
+    50%  {top: 75%; right: 50%;}
+    65%  {top: 30%; right: 20%;}
+    75%  {top: 10%; right: 90%;}
+    85%  {top: 60%; right: 22%;}
+    100% {top: 80%; right: 5%;}
   }
 
   .contact-left-text-box{
@@ -770,6 +867,7 @@ main .right img{
     background-repeat: repeat;
     background-color: #0f0823;
     opacity: 0.95;
+    box-shadow: 1px 1px 20px 0px #3a32bf;
   }
 
   .contact-right-text-box .form-input{
@@ -903,6 +1001,19 @@ main .right img{
         width: 80%;
     }
 
+    .underlay{
+      height: 100%;
+      flex: 1;
+      top: 0;
+      bottom: 0;
+      /* background-color: #34cdff; */
+    }
+    .underlay .imgFour 
+    ,.underlay .imgFive
+    {
+      display: none;
+    }
+
   }
 
   @media only screen and (max-width: 650px) {
@@ -910,10 +1021,10 @@ main .right img{
       flex-flow: column;
     } */
 
-    /* .a-section-img-box {
-      background-color: #0f0823;
+    .a-section-img-box {
+      /* background-color: #0f0823; */
       display: none;
-    } */
+    }
 
     .about-item-container{
         display: flex;

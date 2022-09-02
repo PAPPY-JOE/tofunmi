@@ -3,6 +3,11 @@
     margin: 0;
     overflow-x: hidden;
   }
+
+  /* * p, * h1, * h2, * h3{
+    cursor: default;
+
+  } */
   
 @font-face {
   font-family: Altone-bold;
