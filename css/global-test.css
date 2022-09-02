@@ -56,6 +56,9 @@ body {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: 5px !important; /* Firefox */
 
+    background-image: url("../images/background.svg");
+    background-repeat: repeat;
+    background-color: #14142b;
   }
 
     body::-webkit-scrollbar {
