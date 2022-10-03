@@ -86,3 +86,34 @@
 .card-back h1{
     margin: 0;
 }
+
+
+/* seyi */
+.blue{
+    margin: 0px;
+    padding: 0px;
+    background-color: blue;
+
+    /* new styles */
+    display: flex;
+    width: max-content;
+}
+
+.red{
+    margin: 30px;
+    padding: 50px;
+    background-color: red;
+
+    /* new style */
+    display: flex;
+
+}
+
+.yellow{
+    padding: 60px;
+    background-color: yellow;
+
+    /* new style */
+    display: flex;
+
+}
