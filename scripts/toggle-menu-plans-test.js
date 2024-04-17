@@ -3,33 +3,34 @@ let menuToggleStatus = false;
 
 let menuToggle = function () {
     if (menuToggleStatus === false) {
-        
+
         $('.fixed-side-bar').css('visibility', 'visible');
         $('.fixed-side-bar').fadeIn(200);
         $('.fixed-side-bar .blur').css('flex', '1');
-        
+
         menuToggleStatus = true;
     }
     else if (menuToggleStatus === true) {
-        
+
         $('.fixed-side-bar').css('transition', 'none');
         $('.fixed-side-bar').fadeOut(200);
         $('.fixed-side-bar nav span').css('border', 'none');
 
 
         if (menuToggleStatus === true && FullMenuStatus === false) {
-                $('.fixed-side-bar .fixed-sidebar-logo').css('visibility', 'hidden');
-                $('.fixed-side-bar a').fadeOut(0, function () {
-                    $('.fixed-side-bar .visible').css('width', '100px');
-                });
-        }       
-    
+            $('.fixed-side-bar .fixed-sidebar-logo').css('visibility', 'hidden');
+            $('.fixed-side-bar a').fadeOut(0, function () {
+                $('.fixed-side-bar .visible').css('width', '100px');
+            });
+        }
+
         menuToggleStatus = false;
     }
 }
 
 $('.fixed-menu-bar ion-icon').on("click", menuToggle);
 $('.fixed-side-bar .blur').on("click", menuToggle);
+$('.fixed-side-bar a').on("click", menuToggle);
 
 
 // Full Menu Toggle
@@ -49,10 +50,9 @@ let FullMenu = function () {
         $('.fixed-side-bar .fixed-sidebar-logo').fadeIn();
         $('.fixed-side-bar a').fadeIn();
 
-        
+
     }
-    
+
 }
 
-$('.fixed-side-bar span').on("click", FullMenu);
-$('.fixed-side-bar .visible').on("click", FullMenu);
+$('.fixed-side-bar span ion-icon').on("click", FullMenu);
